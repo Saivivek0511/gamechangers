@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ltts.com</groupId>
+  <artifactId>Gamechangers</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+<properties>
+	<maven.compiler.target>1.8</maven.compiler.target>
+	<maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
+
+  <dependencies>
+			<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.6</version>
+			<scope>test</scope>
+			</dependency>
+  </dependencies>
+   
+  
+  <build>
+			<finalName>saivivek</finalName>
+				<plugins>
+						<plugin>
+									<groupId>org.apache</groupId>
+									<artifactId>apache</artifactId>
+									<version>30</version>
+									<configuration>
+										<archive>
+												<manifest>
+															<addClasspath>true</addClasspath>
+															<classpathprefix>lib</classpathprefix>
+															<mainClass>Gamechangers.mycalc1</mainClass>
+												</manifest>
+										</archive>
+									</configuration>
+							
+						</plugin>
+				</plugins>
+  </build>
+</project>
